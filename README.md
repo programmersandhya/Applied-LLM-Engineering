@@ -1,5 +1,9 @@
 # Applied-LLM-Engineering
-![Applied LLM Engineering Banner](TubeDigest-Youtube_Summarizer\assets\LLM-Eng.png)
+<p align="center">
+  <a href="TubeDigest-Youtube_Summarizer\assets\LLM-Eng.png">
+    <img src="TubeDigest-Youtube_Summarizer\assets\LLM-Eng.png" width="100%">
+  </a>
+</p>
 A collection of applied Generative AI and LLM engineering projects focused on:
 
 - RAG Systems
