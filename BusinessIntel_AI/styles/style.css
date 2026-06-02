@@ -1,0 +1,92 @@
+/* ALL BUTTONS */
+div.stButton > button {
+    background-color: #008000 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-weight: 700 !important;
+}
+
+
+/* DOWNLOAD BUTTONS */
+div.stDownloadButton > button {
+    background-color: #008000 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-weight: 700 !important;
+}
+
+
+/* HOVER EFFECT */
+div.stButton > button:hover,
+div.stDownloadButton > button:hover {
+    background-color: #00B000 !important;
+    color: white !important;
+}
+
+
+/* NORMAL TAB */
+button[data-baseweb="tab"] p {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: white !important;
+}
+
+
+/* SELECTED TAB */
+button[data-baseweb="tab"][aria-selected="true"] p {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #00D100 !important;
+}
+
+
+/* TAB UNDERLINE */
+div[data-baseweb="tab-highlight"] {
+    background-color: white !important;
+    height: 4px !important;
+}
+
+/* KPI CARD */
+.kpi-card {
+    background-color:  rgba(35, 5, 45, 0.85);
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* KPI TITLE */
+.kpi-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #D1D5DB;
+    margin-bottom: 15px;
+}
+
+/* KPI VALUE */
+.kpi-value {
+    font-size: 32px;
+    font-weight: 400;
+    color: #7DF9FF;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* CHART CARD */
+.chart-card {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #1F2937;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
