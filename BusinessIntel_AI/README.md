@@ -126,8 +126,6 @@ BusinessIntel_AI/
 └── .gitignore
 ```
 
-```
-
 ---
 
 # Installation
