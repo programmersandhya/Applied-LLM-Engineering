@@ -16,5 +16,9 @@ A collection of applied Generative AI and LLM engineering projects focused on:
 
 ## Projects
 
-### TubeDigest
-AI-powered multilingual YouTube video summarizer.
+### 1. TubeDigest
+        AI-powered multilingual YouTube video summarizer.
+
+### 2. BusinessIntel AI
+        AI-powered business intelligence and analytics platform that converts natural language business questions into SQL queries, interactive dashboards, AI-generated insights, and downloadable reports using Streamlit, SQL Server, Plotly, and OpenAI.
+
