@@ -12,7 +12,7 @@ def get_connection():
         logger.info("Initiating database connection.")
         connection = pyodbc.connect(
             f"""
-            DRIVER={{SQL Server}};
+            DRIVER={{ODBC Driver 17 for SQL Server}};
             SERVER={SERVER};
             DATABASE={DATABASE};
             Trusted_Connection=yes;
@@ -28,7 +28,11 @@ def get_connection():
 def execute_query(query):
     connection = None
     try:
+        print("initiating db connection")
         connection = get_connection()
+        if connection is None:
+            logger.error("Database connection failed.")
+            return None
         logger.info("Connection successful")
         logger.info(f"executing query:{query}")
         dataframe = pd.read_sql(query, connection)
@@ -41,5 +45,4 @@ def execute_query(query):
         if(connection):
             connection.close()
             logger.info("DB connection closed")
-
 
