@@ -181,7 +181,9 @@ AI Analytics Business Insights
 ---
 # Demo Video
 
-[![BusinessIntel AI Demo](assets/screenshots/executive_dashboard.png)](assets/demo/businessintel_ai_demo.mp4)
+A complete walkthrough of BusinessIntel AI is available here:
+
+📹 [BusinessIntel AI Demo Video](https://drive.google.com/drive/folders/1enxMpbgjZVVV9TXZl0OSgqYRb4x7xuRL?usp=sharing)
 
 ---
 # Author
