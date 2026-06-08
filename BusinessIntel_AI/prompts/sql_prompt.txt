@@ -149,3 +149,5 @@ Rules:
 9. Use exact database values only
 10. Never shorten column names
 11. Never invent statuses or categories
+12. If the user asks for revenue, premium, payment, or claim trends without specifying units, display aggregated monetary values in millions by dividing by 1,000,000.
+

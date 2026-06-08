@@ -13,6 +13,7 @@ from reportlab.lib.units import inch
 from logger_config import logger
 import os
 from datetime import datetime
+import kaleido
 
 def generate_pdf_report(user_question,sql_query,insights,data,fig):
     try:

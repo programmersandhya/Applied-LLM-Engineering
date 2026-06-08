@@ -147,7 +147,7 @@ def render_chart_card(fig):
         with st.container(border=True):
             st.plotly_chart(
                 fig,
-                use_container_width=True
+                width='stretch'
             )
             st.markdown("<br>", unsafe_allow_html=True)
     except Exception as e:

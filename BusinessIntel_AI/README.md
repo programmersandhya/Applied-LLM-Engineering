@@ -179,7 +179,11 @@ AI Analytics Business Insights
 ![AI Analytics UI](assets/screenshots/ai_analytics_5.png)
 
 ---
+# Demo Video
 
+[![BusinessIntel AI Demo](assets/screenshots/executive_dashboard.png)](assets/demo/businessintel_ai_demo.mp4)
+
+---
 # Author
 
 ### Sandhya Rani Parida

@@ -28,7 +28,6 @@ def get_connection():
 def execute_query(query):
     connection = None
     try:
-        print("initiating db connection")
         connection = get_connection()
         if connection is None:
             logger.error("Database connection failed.")

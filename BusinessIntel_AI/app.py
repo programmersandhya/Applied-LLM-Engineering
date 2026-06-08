@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import datetime
 import streamlit as st
 from db_connector import execute_query
@@ -17,6 +18,17 @@ from dashboard_charts import (
 from report_generator import generate_pdf_report, generate_csv_file
 from PIL import Image
 from logger_config import logger
+import os
+import warnings
+
+
+# 1. Suppress Python and library warnings - DeprecationWarnings
+warnings.filterwarnings("ignore")
+
+# 2. Suppress TensorFlow, Plotly, and system-level logging warnings
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+os.environ["PYTHONWARNINGS"] = "ignore"
+
 
 def BusinessIntel_AI():
     try:
@@ -25,18 +37,13 @@ def BusinessIntel_AI():
             page_title="BusinessIntel AI",
             layout="wide"
         )
-        BASE_DIR = os.path.dirname(
-            os.path.abspath(__file__)
-        )
-
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         styles_path = os.path.join(
             BASE_DIR,
             "styles",
             "style.css"
         )
-
         load_css(styles_path)
-
         banner_image = Image.open(
             os.path.join(
                 BASE_DIR,
@@ -44,10 +51,9 @@ def BusinessIntel_AI():
                 "banner_1.png"
             )
         )
-
         st.image(
             banner_image,
-            use_container_width=True
+            width="stretch"
         )
         tab1, tab2 = st.tabs([
             "Executive Dashboard",

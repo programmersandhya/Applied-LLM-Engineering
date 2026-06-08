@@ -16,7 +16,7 @@ def generate_analytics(data, json_response):
             y_column
         )
         if fig is not None:
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width='stretch')
             logger.info("chart generated successfully.")
             return fig
         else:
